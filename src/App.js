@@ -7,7 +7,7 @@ import Card from "./Card"
 function App() {
   const [dummyData, setDummyData] = useState([])
 useEffect (()=> {
-  axios.get("https://api.nasa.gov/planetary/apod?api_key=3ZRQ3qagax3RW1j0LBYt9RfhemEhzt9uPLNvWScR&date=2012-03-14")
+  axios.get("https://api.nasa.gov/planetary/apod?api_key=3ZRQ3qagax3RW1j0LBYt9RfhemEhzt9uPLNvWScR&date=2020-07-20")
 .then((data)=>{
   setDummyData(data.data) 
   console.log(data.data)
